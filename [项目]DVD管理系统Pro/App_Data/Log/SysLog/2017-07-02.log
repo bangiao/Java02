@@ -1,0 +1,6 @@
+Table 'dvdmgr.admin_id' doesn't exist
+select count(1) from admin_id where admin_name='admin' and admin_pwd ='admin123'
+null
+Table 'dvdmgr.admin_id' doesn't exist
+select count(1) from admin_id where admin_name='admin' and admin_pwd ='admin123'
+null

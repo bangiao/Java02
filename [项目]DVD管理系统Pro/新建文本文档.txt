@@ -1,0 +1,40 @@
+use dvdmgr;
+drop table if exists my_admin;
+drop table if exists dvd;
+
+create table my_admin(
+	admin_id int auto_increment not null comment '管理员ID',
+	admin_name varchar(50) not null comment '管理员账号',
+	admin_pwd varchar(50) not null comment '管理员密码',
+	constraint pk_admin_id primary key(admin_id)
+);
+
+create table dvd(
+	dvd_id int auto_increment not null comment 'DvdID',
+	dvd_name varchar(30) not null comment 'Dvd名字',
+	constraint pk_dvd_id primary key (dvd_id)
+);
+
+
+
+insert into my_admin(admin_name, admin_pwd) values('admin', 'admin123');
+insert into my_admin(admin_name, admin_pwd) values('manager', 'manager123');
+insert into my_admin(admin_name, admin_pwd) values('zhazha', 'zhazha123');
+insert into my_admin(admin_name, admin_pwd) values('kankan', 'kankan123');
+insert into my_admin(admin_name, admin_pwd) values('xixi', 'xixi123');
+insert into my_admin(admin_name, admin_pwd) values('hehe', 'hehe123');
+
+
+
+insert into dvd(dvd_name) values ('渣渣');
+insert into dvd(dvd_name) values ('嘻嘻');
+insert into dvd(dvd_name) values ('哈哈');
+insert into dvd(dvd_name) values ('嘿嘿');
+insert into dvd(dvd_name) values ('呼呼');
+
+-- delete from my_admin where admin_id=3;
+
+update my_admin set admin_pwd='123' where admin_id=2;
+
+select * from my_admin;
+select * from dvd;

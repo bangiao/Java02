@@ -1,0 +1,14 @@
+delete from my_admin where admin_id=3;
+删除成功
+delete from my_admin where admin_id=3;
+删除成功
+delete from my_admin where admin_id=5;
+删除成功
+delete from my_admin where admin_id=4;
+Can not issue data manipulation statements with executeQuery().
+delete from my_admin where admin_id=5;
+delete from my_admin where admin_id=5;		受影响的行数：1
+删除成功
+delete from my_admin where admin_id=4;
+delete from my_admin where admin_id=4;		受影响的行数：1
+删除成功
